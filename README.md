@@ -3,7 +3,7 @@ My journey of solving DSA problems for 100 days straight. Tracking consistency, 
 
 # DAY 1
 
-Q1 - 169 Majority Element [Solution](Q1-169.cpp) 
+Q1 - 169 Majority Element [Solution](DAY1/Q1-169.cpp) 
 
 Q2 - 53 Maximum Subarray [Solution](Q2-53.cpp)
 
