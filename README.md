@@ -3,13 +3,20 @@ My journey of solving DSA problems for 100 days straight. Tracking consistency, 
 
 # DAY 1
 
- Q1 - 169 Majority Element
+Q1 - 169 Majority Element [Solution](Q1-169.cpp) 
 
-Given an array nums of size n, return the majority element.
-The majority element is the element that appears more than ⌊n / 2⌋ times. You may assume that the majority element always exists in the array.
+Q2 - 53 Maximum Subarray [Solution](Q2-53.cpp)
 
-Q2 - 53 Maximum Subarray
+Q3 - 88 Merge Sorted Array [Solution](Q3-88.cpp)
 
-Given an integer array nums, find the subarray with the largest sum, and return its sum.
+Q4 - 35 Search Insert Position [Solution](Q4-35.cpp)
+
+Q5 - 704 Binary Search [Solution](Q5-704.cpp)
+
+# DAY 2
+
+Q1 - 118 Pascal's Triangle [Solution](Q1-118.cpp)
+
+Q2 - 119 Pascal's Triangle || [Solution](Q2-119.cpp)
 
 Q3 - 
