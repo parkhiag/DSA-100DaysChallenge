@@ -18,5 +18,3 @@ Q5 - 704 Binary Search [Solution](DAY1/Q5-704.cpp)
 Q1 - 118 Pascal's Triangle [Solution](DAY2/Q1-118.cpp)
 
 Q2 - 119 Pascal's Triangle || [Solution](DAY2/Q2-119.cpp)
-
-Q3 - 
