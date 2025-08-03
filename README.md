@@ -22,3 +22,10 @@ Q2 - 119 Pascal's Triangle || [Solution](DAY2/Q2-119.cpp)
 # DAY 3
 
 Learning about Linked List [file](DAY3/ll.cpp)
+
+Q1 - 203 Remove Linked List Items [Solution](DAY3/Q1-203.cpp)
+
+# DAY 4
+
+Q1 - 237 Delete Node in a Linked List [Solution](DAY4/Q1-237.cpp)
+
