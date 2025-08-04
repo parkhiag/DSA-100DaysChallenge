@@ -71,18 +71,19 @@ Node* insertAtk(Node* head, int value, int k) {
     while (temp!=NULL) {
         count++;
         if (count==k-1) {
-            temp->next= new Node(value, )
+            Node* x=new Node(value, temp->next);
+            temp->next=x;
+            break;
         }
         temp=temp->next;
-        
-        
     }
+    return head;
 }
 
 int main() {
     vector<int> arr = {12, 5, 8, 7};
     Node* head = convertArr2LL(arr);
-    head = insertTail(head, 100);
+    head = insertAtk(head, 100, 3);
     print(head);
 
 }

@@ -29,3 +29,9 @@ Q1 - 203 Remove Linked List Items [Solution](DAY3/Q1-203.cpp)
 
 Q1 - 237 Delete Node in a Linked List [Solution](DAY4/Q1-237.cpp)
 
+# DAY 5
+
+Learning about how to insert an element in a Linked List.
+
+# DAY 6
+
