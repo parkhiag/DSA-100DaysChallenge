@@ -41,7 +41,7 @@ void print(Node* head) {
     }
 }
 // deleting a head in a doubly linked list
-Node* deleteindLL(Node* head) {
+Node* deletehead(Node* head) {
     // case when linked list is empty
     if (head==NULL || head->next==NULL) return NULL; 
     Node* prev=head;
@@ -65,14 +65,49 @@ Node* deletetail(Node* head) {
     return head;
 }
 // deleting the kth element of the doubly linked list
-Node* deletek(Node* head) {
+Node* deletek(Node* head, int k) {
+    int count=0;
+    Node* temp=head;
+    while (temp!=NULL) {
+        count++;
+        if (count==k) break;
+        temp=temp->next;
+    }
+    Node* prev=temp->back;
+    Node* front=temp->next;
+    if (prev==NULL && front==NULL) {
+        delete temp;
+        return NULL;
+    }
+    else if (prev==NULL) deletehead(head); // temp is at head
+    else if (front==NULL) deletetail(head); // temp is at tail
+    else {
+        prev->next=front;
+        front->back=prev;
+        temp->next=NULL;
+        temp->back=NULL;
+        return head;
+    }
     
+}
+// deleting a given node
+Node* deletenode(Node* temp) {
+    Node* prev=temp->back;
+    Node* front=temp->next;
+
+    if (front==NULL) {
+        // we are at the tail
+        prev->next=NULL;
+        temp->back=NULL;
+        delete temp;
+    }
 }
 
 int main() {
     vector<int> arr= {1,3,2,4};
+    int k=3;
     Node* head = arrtoDLL(arr);
-    head=deletetail(head);
+    head=deletek(head, k);
     print(head);
 
     return 0;
