@@ -91,23 +91,28 @@ Node* deletek(Node* head, int k) {
     
 }
 // deleting a given node
-Node* deletenode(Node* temp) {
+void deletenode(Node* temp) {
     Node* prev=temp->back;
     Node* front=temp->next;
 
     if (front==NULL) {
         // we are at the tail
         prev->next=NULL;
-        temp->back=NULL;
+        temp->back= temp->next= NULL;
         delete temp;
+        return;
     }
+    prev->next=front;
+    front->back=prev;
+    temp->back= temp->next= NULL;
+    delete temp;
+    return;
 }
 
 int main() {
     vector<int> arr= {1,3,2,4};
-    int k=3;
     Node* head = arrtoDLL(arr);
-    head=deletek(head, k);
+    deletenode(head->next->next);
     print(head);
 
     return 0;
