@@ -32,5 +32,43 @@ public:
     }
 };
 
-// method 2 : 
+// method 2 : using iteration and no extra space
+
+
+class Solution {
+public:
+    ListNode* reverseList(ListNode* head) {
+        if (head==NULL) return NULL;
+
+        ListNode* temp = head;
+        ListNode* prev = NULL;
+        ListNode* front = NULL;
+        while (temp!=NULL) {
+            front = temp->next;
+            temp->next=prev;
+            prev=temp;
+            temp=front;
+        }
+        return prev;
+    }
+};
+
+// method 3 : using recursion
+class Solution {
+public:
+
+    ListNode* reverseList(ListNode* head) {
+        // taking the base case. 
+        if (head==NULL || head->next == NULL) {
+            return head;
+        }
+
+        ListNode* newhead = reverseList(head->next);
+        ListNode* front = head->next;
+        front->next=head;
+        head->next=NULL;
+        return newhead;
+
+    }
+};
 
